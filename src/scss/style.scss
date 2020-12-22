@@ -1,0 +1,283 @@
+// web fonts
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@font-face {
+    font-family: "Saol Display Regular";
+    src: url("http://db.onlinewebfonts.com/t/4c4c08af466e9ad071b6d69cf44093df.eot"); //ie9
+    src: url("http://db.onlinewebfonts.com/t/4c4c08af466e9ad071b6d69cf44093df.eot?#iefix") format("embedded-opentype"), //ie6-ie8
+        url("http://db.onlinewebfonts.com/t/4c4c08af466e9ad071b6d69cf44093df.woff2") format("woff2"), //chrome firefox
+        url("http://db.onlinewebfonts.com/t/4c4c08af466e9ad071b6d69cf44093df.woff") format("woff"), //chrome firefox
+        url("http://db.onlinewebfonts.com/t/4c4c08af466e9ad071b6d69cf44093df.ttf") format("truetype"), //chrome firefox opear safari iOS
+        url("http://db.onlinewebfonts.com/t/4c4c08af466e9ad071b6d69cf44093df.svg#Saol Display Regular") format("svg"); //iOS
+}
+@font-face {
+    font-family: 'Chosunilbo_myungjo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-CoreDream-1Thin';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-1Thin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-CoreDream-2ExtraLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-CoreDream-4Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-CoreDream-5Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-CoreDream-6Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-CoreDream-7ExtraBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-7ExtraBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-CoreDream-8Heavy';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-8Heavy.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-CoreDream-9Black';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-9Black.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// font
+$font-main: "Saol Display";
+$font-sub: "Scheherazade";
+$font-basic: "Roboto";
+$font-korea-main: "Chosunilbo_myungjo";
+$font-korea-sub: "S-Core Dream";
+$basic-font-size : 14px;
+$basic-line-height : 2;
+// color
+$white : #fff;
+$color-black : #000000;
+$color-white : #F0EEEB;
+
+// reset
+body,
+button,
+dd,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+legend,
+li,
+ol,
+p,
+select,
+table,
+td,
+textarea,
+th,
+ul {
+    margin:0;
+    padding:0
+}
+//root
+:root {
+    font-size: $basic-font-size;
+    background: $color-white;
+}
+// heading
+h1,
+h2,
+h3,
+h4, 
+h5,
+h6 {
+    margin: 0;
+    line-height: 1.2;
+    font: {
+        family: $font-basic, sans-serif;
+        weight: normal;
+    }
+} 
+// link
+a {
+    color: $color-black;
+    background-color: transparent;
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+    &:active,
+    &:hover {
+        outline: 0;
+    }
+}
+// text style
+em, address {
+    font-style: normal;
+}
+strong {
+    font-weight: normal;
+}
+p,
+dl,
+ol,
+ul {
+    word-break: keep-all;
+}
+//img 
+img {
+    border: 0;
+    vertical-align: top;
+    width: 100%;
+}
+//table
+table {
+    border: 0;
+    border: {
+        collapse: collaspe;
+        spacing: 0;
+    }
+    width: 100%;
+}
+//list-style
+li,
+ul {
+    list-style: none;
+}
+//iframe
+iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+// mixins
+//before, after
+@mixin cont($position: absolute, $content: ""){
+    content: $content;
+    position: $position;
+}
+//center
+@mixin center {
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+// layout
+// header   
+#header {
+    position: static; 
+    left: 0; top: 0; 
+    width: 100%;
+    height: 82px;
+    background: $color-black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #2E2E30;
+    .site {
+        flex: 1 1 30%;
+        a {
+            position: relative;
+            text-transform: capitalize;
+            display: block;
+            padding-left: 40px;
+            border-right: 1px solid #2E2E30;
+            width: 175px;
+            height: 82px;
+            padding: 32px 27px 27px 65px;
+            text-align: center;
+            box-sizing: border-box;
+            &::before {
+                @include cont;
+                left: 48px; 
+                top: 36px;
+                width: 30px;
+                height: 1px;
+                background: $color-white;
+            }
+            &::after {
+                @include cont;
+                left: 48px; 
+                top: 46px;
+                width: 30px;
+                height: 1px;
+                background: $color-white;
+            }
+        }
+    }
+    .logo {
+        flex: 1 1 30%;
+        text-align: center;
+        font-size: 2.2rem;
+        font-family: $font-main;
+        font-weight: bold;
+    }
+    .nav {
+        flex: 1 1 30%;
+        text-align: right;
+        ul {
+            margin-right: 20px;
+        }
+        li {
+            display: inline;
+            a {
+                display: inline-block;
+                padding: 10px;
+            }
+        }
+    }
+    a {
+        color: $color-white;
+    }
+}
+#header.white {
+    background: $color-white;
+    border-bottom: 1px solid #DAD8D1;
+    .site a {
+        border-right: 1px solid #DAD8D1;
+    }
+    a {
+        color: $color-black;
+        &::before {
+            background-color: $color-black;
+        }
+        &::after {
+            background-color: $color-black;
+        }
+    }
+}
