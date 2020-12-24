@@ -200,7 +200,7 @@ iframe {
 // layout
 // header   
 #header {
-    position: static; 
+    position: fixed; 
     left: 0; top: 0; 
     width: 100%;
     height: 82px;
@@ -278,6 +278,118 @@ iframe {
         }
         &::after {
             background-color: $color-black;
+        }
+    }
+}
+
+//container
+.container {
+    width: 1300px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+// main
+#mainCont {
+    background-color: $color-black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainCont {
+    color: $white;
+    font-size: 9vw;
+    line-height: 0.8;
+    font-family: $font-main;
+    font-weight: normal;
+    margin-top: 6vh;
+    > div {
+        margin-bottom: 0.5vw;
+        padding-bottom: 1vw;
+
+        span {
+            color: $color-black;
+            background-color: #fff;
+            display: inline-block;
+            padding: 0 5px;
+            height: 8.5vw;
+        }
+    }
+
+    .white {
+        background-color: #fff;
+        color: #000;
+        display: inline-block;
+    }
+}
+
+//about
+#aboutCont {}
+.aboutCont {
+
+    > div {
+        font-size: 1.2rem;
+        font-family: $font-korea-main;
+
+        h2 {
+            font-family: $font-korea-main;
+            font-size: 1.2rem;
+            margin: {
+                top: 60px;
+                bottom: 30px;
+            }
+        }
+        
+        p {
+            line-height: 1.5;
+            margin-bottom: 275px;
+        }
+    }
+
+    > div:nth-child(1) {
+
+        .aiLeft {
+            width: 100%;
+        }
+        .aiRight {
+            width: 60%;
+        }
+    }
+
+    > div:nth-child(2) {
+        display: flex;
+        margin-bottom: 275px;
+
+        .aiLeft {
+            flex: 1 1 67%;
+        }
+        .aiRight {
+            flex: 1 1 30%;
+            margin-left: 3%;
+
+            h2 {
+                margin-top: 0;
+            }
+        }
+    }
+
+    > div:nth-child(3) {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-bottom: 275px;
+        .aiLeft {
+            flex: 0 0 67%;
+        }
+        .aiRight {
+            flex: 0 0 30%;
+            margin-right: 3%;
+            text-align: right;
+
+            h2 {
+                margin-top: 0;
+            }
         }
     }
 }
